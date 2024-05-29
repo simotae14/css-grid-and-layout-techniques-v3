@@ -13,7 +13,7 @@
   border: 2px solid red;
 }
 
-.grid-container figure:first-child {
+.grid-container figure:nth-child(3) {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
   display: block;
