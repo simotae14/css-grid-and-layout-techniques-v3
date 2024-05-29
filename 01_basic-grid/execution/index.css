@@ -1,7 +1,26 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
   gap: 1rem 2rem;
+}
+
+.grid-container figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.grid-container figure:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  display: block;
+}
+
+.grid-container figure figcaption {
+  border: 2px dotted blue;
 }
 
 /* extremely basic formatting */
