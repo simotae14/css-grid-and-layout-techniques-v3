@@ -1,14 +1,3 @@
-/*
-Create the layout shown using CSS Grid and the skills you've learned to this point in time.
-
-Width of the collage should be 980px. You may center the collage in space if there is extra room.
-
-Do not reorder the images. You may need to alter the HTML to get the collage to work.
-
-*/
-
-
-
 /* extremely basic formatting */
 body {
   font-family: "Libre Franklin", sans-serif;
@@ -22,4 +11,38 @@ img {
 figure {
   margin: 0;
   padding: 0;
+}
+
+/*
+Create the layout shown using CSS Grid and the skills you've learned to this point in time.
+
+Width of the collage should be 980px. You may center the collage in space if there is extra room.
+
+Do not reorder the images. You may need to alter the HTML to get the collage to work.
+
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  width: 980px;
+  margin: 0 auto;
+}
+.one {
+  grid-column: 1/3;
+}
+.two {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+.three {
+  grid-column: 1/3;
+}
+.four {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.five {
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
