@@ -1,8 +1,16 @@
+/* extremely basic formatting */
+body {
+  background-color: black;
+}
+img {
+  max-width: 100%;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
 }
 .one {
@@ -24,10 +32,27 @@
   grid-row: 3/4;
 }
 
-/* extremely basic formatting */
-body {
-  background-color: black;
-}
-img {
-  max-width: 100%;
+@media (max-width: 700px){
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .one {
+    grid-column: auto;
+  }
+  .two {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .three {
+    grid-column: auto;
+  }
+  .four {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .five {
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
